@@ -29,6 +29,18 @@ label{
     box-shadow: 4px 4px 5px rgb(26, 66, 94) !important;
 
 }
+.boton{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 10px;
+    top: 10px;
+    border: 0px;
+    background-size: cover;
+    background-image: url(flecha.png);
+    background-color: transparent;
+
+}
 @media screen and (max-width:767px){
     .ruptura{
 

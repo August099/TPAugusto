@@ -1,12 +1,12 @@
 
-h3{
+    /* navbar y general */
+
+h3,h4{
 
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 }
-h4{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
+
 
 .nav-color{
 
@@ -54,8 +54,10 @@ h4{
 .fondo{
      
     background: linear-gradient(140deg, rgba(108,35,35,0.9808298319327731) 6%, rgba(12,43,80,0.9668242296918768) 76%);
-    background-size: cover;
+    
 }
+
+    /* cartas de artistas */
 
 .btn-primary{
 
@@ -107,18 +109,15 @@ h4{
 
 }
 
-.boton-carrusel-prev{
+    /* carrusel bandas */
+
+.boton-carrusel-prev,.boton-carrusel-next{
 
     margin-left: 0%;
     width: 10%;
 
 }
 
-.boton-carrusel-next{
-
-    margin-right: 0%;
-    width: 10%;
-}
 
 .grupo-tarjetas{
 
@@ -196,6 +195,7 @@ h4{
     border-radius: 10px;
 
 }
+    /* especificaciones de carrusel video */
 
 #carouselExample .carousel-inner:hover{
 
@@ -211,6 +211,9 @@ h4{
     
     
 }
+
+    /* la mayoria de los estilos de pie de pagina se encuentran aca */
+
 .pie-de-pagina{
     
     background: linear-gradient(rgba(2, 24, 87, 0.967) 40%, rgb(163, 32, 32));
@@ -223,7 +226,7 @@ h4{
 
 .texto-pie-de-pagina{
     
-    color: rgb(184, 176, 176); 
+    color: rgb(238, 238, 238); 
     text-shadow: 3px 3px 3px rgb(0, 0, 0);
     width: max-content;
 
@@ -236,9 +239,9 @@ h4{
 }
 .boton-redes{
     
-    border: 0; 
     background: transparent; 
     margin-top: 10px;
+
 }
 .orden{
 
@@ -281,7 +284,7 @@ dt{
     
 }
 
-
+/* animaciones */
 
 @keyframes shadow{
 
@@ -378,7 +381,7 @@ dt{
     
 }
 
-
+/* breakpoints */
 
 @media screen and (max-width:991px){
     .navbar-toggler{
@@ -386,7 +389,11 @@ dt{
     }
 }
 @media screen and (max-width:900px){
-    
+    .boton, a{
+
+        font-size: small;
+
+    }
     .orden{
 
         display: inline;
@@ -394,9 +401,6 @@ dt{
 
     }
 
-    a{
-        font-size: x-small;
-    }
     .redes{
 
         display: grid;
@@ -404,17 +408,15 @@ dt{
         justify-content: center;
         
     }
+   
     .texto-pie-de-pagina{
         
-        font-size: x-small;
+        font-size: small;
         width: auto;
 
     }
     dt{
-        font-size: x-small;
-    }
-    dl{
-        margin-left: auto;
+        font-size: small;
     }
     
 }
@@ -429,11 +431,13 @@ dt{
         
     }
 
-    .boton{
+    
+    a{
 
         font-size: x-small;
 
     }
+
     .orden{
 
         display: inline;
@@ -441,9 +445,6 @@ dt{
 
     }
 
-    a{
-        font-size: x-small;
-    }
     .redes{
 
         display: grid;
@@ -460,11 +461,8 @@ dt{
     dt{
         font-size: x-small;
     }
-    dl{
-        margin-left: 5px;
-    }
 
-    a:hover{
+    footer a:hover{
         text-decoration: underline;
     }
     #carouselExample2 .carousel-item{
@@ -472,22 +470,31 @@ dt{
         padding-inline: 0px !important;
 
     }
+    .tarjeta:hover{
+
+        margin-left: 10px !important;
+        margin-right: 10px !important;
+        margin-top: 5px;
+    
+    }
 }
 @media screen and (max-width:650px){
+    .boton{
 
-    .text-body{
+        font-size: x-small;
+
+    }
+
+    .text-body, .btn-primary{
         font-size: small;
     }
-    .btn-primary{
-        font-size: small;
+    dl{
+        margin-left: 15px;
     }
     
 }
 @media screen and (max-width:472px){
-    .text-body{
-        font-size: xx-small;
-    }
-    .btn-primary{
+    .text-body, .btn-primary{
         font-size: xx-small;
     }
 
