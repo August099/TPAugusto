@@ -400,19 +400,12 @@ dt{
         font-size: xx-small;
 
     }
-
-    .redes{
-
-        display: grid;
-        align-items: center;
-        justify-content: center;
-        
-    }
    
     .texto-pie-de-pagina{
         
         font-size: small;
         width: auto;
+        text-align: center;
 
     }
     dt{
@@ -455,7 +448,7 @@ dt{
     .texto-pie-de-pagina{
         
         font-size: x-small;
-        width: auto;
+        
 
     }
     dt{
@@ -491,12 +484,91 @@ dt{
     dl{
         margin-left: 15px;
     }
+    h2{
+        font-size: large;
+    }
     
 }
 @media screen and (max-width:472px){
-    .text-body, .btn-primary{
-        font-size: xx-small;
+    .text-body, .btn-primary, .boton,.texto-pie-de-pagina, dt, dd,.legal a, h5{
+        font-size: xx-small !important;
+    }
+    li a{
+        font-size: small !important;
     }
 
+}
+@media screen and (max-width:410px){
+    h3{
+        margin-block: 5px !important;
+        font-size: medium;
+    }
+    .carousel-item{
+
+        padding: 13px !important;
+
+    }
+
+    .text-body, .btn-primary, .boton,.texto-pie-de-pagina, dt, dd,.legal a, h5{
+        font-size: 8px !important;
+    }
+    dl{
+        margin-left: 8px;
+    }
+    h2{
+        font-size: small;
+    }
+
+    .btn-primary, .card-body{
+
+        padding: 5px;
+
+    }
+
+    
+
+}
+@media screen and (max-width:374px){
+    
+    .text-body, .btn-primary, .boton, dd,.legal a, h5{
+        font-size: 6px !important;
+    }
+    .row{
+
+        margin: 0% !important;
+
+    }
+    .col-6{
+
+        width: 100% !important;
+        padding: 0%;
+        
+    }
+    .ajuste-telefono, .orden{
+
+        display: flex !important;
+        flex-direction: column;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+    .pie-de-pagina{
+        padding: 0%;
+    }
+    .centrar-celu{
+        display: flex !important;
+        align-items: start !important;
+        justify-content: center !important;
+        width: 100% !important;
+
+    }
+    .boton-carrusel-prev,.boton-carrusel-next{
+
+        margin-left: -1%;
+        width: 8%;
+    
+    }
+    .card-title{
+        margin-bottom: 2px;
+    }
 
 }
