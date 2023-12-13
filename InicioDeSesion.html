@@ -20,21 +20,21 @@
         <!-- boton(link) atras -->
         <a class="boton" href="index.html"></a>
         <!-- formulario -->
-        <form class="row g-0 my-5">
+        <form class="row g-0 my-5" action="registrarUsuario" method="post">
             <div class="col-md-3 m-auto">
-                <label for="validationDefault01" class="form-label">Nombre de usuario</label>
-                <input type="text" class="form-control" id="validationDefault01" required>
+                <label for="usuario" class="form-label">Nombre de usuario</label>
+                <input type="text" class="form-control" id="usuario" name="usuario" required>
             </div>
             <div class="col-md-3 m-auto">
-                <label for="validationDefaultUsername" class="form-label">Email</label>
+                <label for="email" class="form-label">Email</label>
                 <div class="input-group">
                     <span class="input-group-text" id="inputGroupPrepend2">@</span>
-                    <input type="text" class="form-control" id="validationDefaultUsername" aria-describedby="inputGroupPrepend2" required>
+                    <input type="text" class="form-control" id="email" name="email" aria-describedby="inputGroupPrepend2" required>
                 </div>
             </div>
             <div class="col-md-3 m-auto">
-                <label for="validationDefault03" class="form-label">Contraseña</label>
-                <input type="text" class="form-control" id="validationDefault03" required>
+                <label for="contraseña" class="form-label">Contraseña</label>
+                <input type="text" class="form-control" id="contraseña" name="contraseña" required>
             </div>
             <div class="col-10 my-3 ruptura" style="margin-left: 4%;">
                 <div class="form-check">
